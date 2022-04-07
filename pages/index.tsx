@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <div className="">
       <Head>
-        <title>Cookie Stand</title>
+        <title>Cookie Stand Admin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <header className="flex items-center justify-between p-4 bg-black text-gray-50">
