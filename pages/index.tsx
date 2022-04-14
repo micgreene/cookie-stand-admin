@@ -24,7 +24,7 @@ const Home: NextPage = () => {
     if (storeInfos.length == 0){
       return 'Make a store!'
     }
-    let ret_str = `{\"location\": "${storeInfos[storeInfos.length - 1].location}", \"minCustomers\": ${storeInfos[storeInfos.length - 1].min_cph}, \"maxCustomers\": ${storeInfos[storeInfos.length - 1].max_cph}, \"avgCookies\": ${storeInfos[storeInfos.length - 1].avg_sales},`
+    let ret_str = `{\"location\": "${storeInfos[storeInfos.length - 1].location}", \"minCustomers\": ${storeInfos[storeInfos.length - 1].min_cph}, \"maxCustomers\": ${storeInfos[storeInfos.length - 1].max_cph}, \"avgCookies\": ${storeInfos[storeInfos.length - 1].avg_sales}}`
     return ret_str;
   }
   
