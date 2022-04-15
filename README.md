@@ -4,13 +4,25 @@
 
 ## Feature Tasks and Requirements
 
-### pages/Index.js should…
+### pages/Index.js
 
-+ Have `<Head>` component with page title set to Cookie Stand Admin
-+ Have a header component that matches spec.
-+ Have a `<main>` component containing `<form>` and a placeholder component showing JSON string of last created Cookie Stand.
-+ Have a `<footer>` component that matches spec.
-+ Style app using TailwindCSS utility classes.
++ return top level component `<CookieStandAdmin>`
+  + `<CookieStandAdmin>`:
+    + Will contain the following components:
+      + `<Head>`
+      + `<Header>`
+      + `<main>`
+      + `<CreateForm>`
+      + `<ReportTable>`
+      + `<Footer>`
+      + Import time slot data from supplied data.js file.
+    + `<CreateForm>`:
+      + Object should calculate hourly sales
+    + `<ReportTable>`:
+      + If reports is empty then render `<h2>No Cookie Stands Available</h2>`
+      + If reports is not empty then render a table with thead,tbody and tfoot components.
++ Components should render to match spec.
++ Style all components using TailwindCSS utility classes to match spec.
 
 ### Database Deployment Requirements
 
@@ -18,7 +30,7 @@
 
 ### Deployed URLs
 
-+ **Running Server:** N/A
++ **Running Server:** http://localhost:3000/
 + **Running Clients:** N/A
 
 ### Pull Request
